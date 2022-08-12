@@ -103,9 +103,20 @@
         padding: 20px;
         background-color: var(--white);
         right: 0;
+        animation: slideLeft 0.5s;
         top: 0;
         width: 60%;
         height: 100vh;
+    }
+
+    @keyframes slideLeft {
+        from {
+            left: 100%;
+        }
+
+        to {
+            left: 40%;
+        }
     }
 
     
