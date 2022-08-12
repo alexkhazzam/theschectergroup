@@ -89,6 +89,11 @@ const setOnLoad = fileLevel => {
     const logo = document.getElementById('logo');
     const navLinks = document.querySelectorAll('.homepage__nav-links__link');
 
+    -1 * homepage.getBoundingClientRect().top > homepage.clientHeight - 125
+      ? (nav.style.boxShadow =
+          'rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px')
+      : (nav.style.boxShadow = '');
+
     if (homepage.getBoundingClientRect().top < 0) {
       navLinks.forEach(navLink => (navLink.style.color = 'black'));
       hamburger.src.includes('open')
