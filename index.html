@@ -18,8 +18,15 @@
     <link rel="stylesheet" href="./styles/shared.css">
     <link rel="stylesheet" href="./index.css">
 
-    <script src="./index.js" defer></script>
+    <script src="./scripts/shared.js" defer></script>
     <script src="./scripts/components/footer.js" defer></script>
+    <script>
+        window.onload = () => {
+            setOnLoad('./')
+            setHamburger('./')
+        }
+
+    </script>
 </head>
 <body>
     <div id="homepage">
@@ -39,7 +46,7 @@
                         <img src="./icons/hamburger-close-black.png" id="homepage__nav-links__secret-hamburger">
                     </li>
                     <li class="homepage__nav-links__link-wrapper">
-                        <a class="homepage__nav-links__link" id="about-link">ABOUT</a>
+                        <a class="homepage__nav-links__link" id="about-link" href="./pages/about.html">ABOUT</a>
                     </li>
                     <li class="homepage__nav-links__link-wrapper">
                         <a class="homepage__nav-links__link" href="./pages/buy.html">BUY</a>

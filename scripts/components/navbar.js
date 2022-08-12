@@ -5,9 +5,12 @@ class Navbar extends HTMLElement {
 
   connectedCallback() {
     this.innerHTML = `
-        <style>
+        <style>            
             #homepage__nav {
-                /* box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px; */
+                z-index: 1;
+            }
+        
+            #homepage__nav {
                 justify-content: space-between;
                 align-items: center;
                 transition: 0.5s;
@@ -16,6 +19,15 @@ class Navbar extends HTMLElement {
                 display: flex;
                 width: 100%;
                 top: 0;
+                left: 0;
+            }
+
+            #homepage__nav__name,
+            .homepage__nav-links__link:hover,
+            .homepage__nav-links__link
+            {
+                text-decoration: none;
+                cursor: pointer;
             }
             
             #homepage__about {
@@ -30,6 +42,10 @@ class Navbar extends HTMLElement {
             
             #contact-link {
                 margin-right: 0px !important;
+            }
+            
+            #homepage__nav-links__hamburger {
+                cursor: pointer;
             }
             
             #homepage__nav-links__hamburger-wrapper {
@@ -49,82 +65,100 @@ class Navbar extends HTMLElement {
                 font-size: 0.8rem;
             }
             
-            /***************HOMEPAGE CONTENT****************/
-            
-            #homepage__content__wrapper {
-                border: 1px solid white;
-            }
-            
-            #homepage__content {
-                text-align: center;
-            }
-            
-            #homepage__content__learn-more-btn {
-                border: 1px solid var(--white);
-                background-color: transparent;
-                padding: 10px 30px;
-                font-size: 0.8rem;
-                transition: 0.3s;
+            #homepage__nav-links__secret-hamburger-wrapper {
+                display: none;
                 cursor: pointer;
             }
             
-            #homepage__content__company-name {
-                font-size: 3rem;
-                margin-bottom: 20px;
-            }
-            
-            #homepage__content__profession {
-                font-family: 'Kotta One', serif;
-                margin-bottom: 20px;
-                text-align: center;
-                line-height: 20px;
-            }
-            
-            #homepage__content__learn-more-btn:hover {
-                background-color: var(--white);
-                color: var(--black);
+            @media (min-width: 900px) {
+                #homepage__nav-links {
+                    display: flex !important;
+                    flex-direction: row !important;
+                }
             }
             
             @media (max-width: 900px) {
-                .homepage__nav-links__link-wrapper {
+                #homepage__nav-links {
                     display: none;
+                    flex-direction: column;
+                    position: absolute;
+                    padding: 20px;
+                    background-color: var(--white);
+                    right: 0;
+                    animation: slideLeft 0.5s;
+                    top: 0;
+                    width: 60%;
+                    height: 100vh;
+                }
+            
+                @keyframes slideLeft {
+                    from {
+                        left: 100%;
+                    }
+            
+                    to {
+                        left: 40%;
+                    }
+                }
+            
+                
+                .homepage__nav-links__link-wrapper {
+                    margin: 30px 0px;
+                }
+            
+                #homepage__nav-links__secret-hamburger-wrapper {
+                    display: block;
+                    margin-top: 0px;
+                    margin-bottom: 50px;
+                }
+            
+                .homepage__nav-links__link {
+                    color: var(--black) !important; 
                 }
             
                 #homepage__nav-links__hamburger-wrapper {
-                    color: white !important;
+                    margin: 0px;
                     display: block;
                 } 
             }
         </style>
         <header>
-            <nav id="homepage__nav">
-                <div id="homepage__about">
-                    <a href="">
-                        <img src="./logos/company-logo.png" width="150" height="85" id="logo">
-                    </a>
-                    <a id="homepage__nav__name">ROSS SCHECTER</a>
-                </div>
+        <nav id="homepage__nav">
+            <div id="homepage__about">
+                <a href="../index.html">
+                    <img src="../logos/company-logo.png" width="150" height="85" id="logo">
+                </a>
+                <a id="homepage__nav__name" href="../index.html">ROSS SCHECTER</a>
+            </div>
+            <div id="homepage__nav-links__wrapper">
+                <li class="homepage__nav-links__link-wrapper" id="homepage__nav-links__hamburger-wrapper">
+                    <img src="../icons/hamburger-open-white.png" id="homepage__nav-links__hamburger">
+                </li>
                 <div id="homepage__nav-links">
-                    <li class="homepage__nav-links__link-wrapper">
-                        <a class="homepage__nav-links__link" href="./pages/buy.html">BUY</a>
+                    <li class="homepage__nav-links__link-wrapper" id="homepage__nav-links__secret-hamburger-wrapper">
+                        <img src="../icons/hamburger-close-black.png" id="homepage__nav-links__secret-hamburger">
                     </li>
                     <li class="homepage__nav-links__link-wrapper">
-                        <a class="homepage__nav-links__link" href="./pages/sell.html">SELL</a>
+                        <a class="homepage__nav-links__link" id="about-link" href="./about.html">ABOUT</a>
                     </li>
                     <li class="homepage__nav-links__link-wrapper">
-                        <a class="homepage__nav-links__link" href="./pages/listings.html">LISTINGS</a>
+                        <a class="homepage__nav-links__link" href="./buy.html">BUY</a>
                     </li>
                     <li class="homepage__nav-links__link-wrapper">
-                        <a class="homepage__nav-links__link" href="./pages/rentals.html">RENTALS</a>
+                        <a class="homepage__nav-links__link" href="./sell.html">SELL</a>
+                    </li>
+                    <li class="homepage__nav-links__link-wrapper">
+                        <a class="homepage__nav-links__link" href="./listings.html">LISTINGS</a>
+                    </li>
+                    <li class="homepage__nav-links__link-wrapper">
+                        <a class="homepage__nav-links__link" href="./rentals.html">RENTALS</a>
                     </li>
                     <li class="homepage__nav-links__link-wrapper" id="contact-link">
-                        <a class="homepage__nav-links__link" href="./pages/contact.html">CONTACT</a>
-                    </li>
-                    <li class="homepage__nav-links__link-wrapper" id="homepage__nav-links__hamburger-wrapper">
-                        <img src="./icons/hamburger-open-white.png" id="homepage__nav-links__hamburger">
+                        <a class="homepage__nav-links__link" href="./contact.html">CONTACT</a>
                     </li>
                 </div>
-            </nav>
+            </div>
+        </nav>
         </header>
     `;
   }

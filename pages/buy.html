@@ -7,15 +7,23 @@
     <title>Buy</title>
     <link rel="icon" href="../logos/company-logo-2.png">
 
-    <script src="../scripts/components/navbar.js" defer></script>
     <script src="../scripts/components/footer.js" defer></script>
+    <script src="../scripts/components/navbar.js" defer></script>
+    <script src="../scripts/shared.js" defer></script>
 
     <link rel="stylesheet" href="../styles/shared.css">
-    <link rel="stylesheet" href="../styles/buy.css">
-
+    <link rel="stylesheet" href="../styles/pages/buy.css">
+    <script>
+        window.onload = () => {
+            setOnLoad('../')
+            setHamburger('../')
+        }
+    </script>
 </head>
 <body>
-    <custom-navbar></custom-navbar>
+    <div id="homepage">
+        <custom-navbar></custom-navbar>
+    </div>
     <custom-footer></custom-footer>
 </body>
 </html>
