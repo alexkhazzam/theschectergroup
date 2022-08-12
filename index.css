@@ -1,0 +1,312 @@
+/* Any copying or redustribution of this code is ILLEGAL. Whomever does so will be subject to prosecution*/
+
+@media (max-width: 500px) {
+    html,
+    body {
+        padding: 0px;
+        margin: 0px;
+    }
+}
+
+/***************CURSOR POINTER****************/
+
+#homepage__nav__name,
+.homepage__nav-links__link:hover,
+.homepage__nav-links__link
+ {
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/***************HOMEPAGE****************/
+
+#homepage {    
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(./images/manhatten2.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    height: 100vh;
+    display: flex;
+    width: 100%;
+}
+
+/***************HOMEPAGE NAV****************/
+
+#homepage__nav {
+    justify-content: space-between;
+    align-items: center;
+    transition: 0.5s;
+    padding: 40px;
+    position: fixed;
+    display: flex;
+    width: 100%;
+    top: 0;
+}
+
+#homepage__about {
+    display: flex;
+    align-items: center;
+}
+
+#logo {
+    margin-right: 15px;
+    display: none;
+}
+
+#contact-link {
+    margin-right: 0px !important;
+}
+
+#homepage__nav-links__hamburger {
+    cursor: pointer;
+}
+
+#homepage__nav-links__hamburger-wrapper {
+    display: none;
+}
+
+#homepage__nav-links {
+    display: flex;
+}
+
+.homepage__nav-links__link-wrapper {
+    list-style-type: none;
+    margin: 0px 20px;
+}
+
+.homepage__nav-links__link {
+    font-size: 0.8rem;
+}
+
+#homepage__nav-links__secret-hamburger-wrapper {
+    display: none;
+    cursor: pointer;
+}
+
+@media (max-width: 900px) {
+    #homepage__nav-links {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        padding: 20px;
+        background-color: var(--white);
+        right: 0;
+        top: 0;
+        width: 60%;
+        height: 100vh;
+    }
+
+    
+    .homepage__nav-links__link-wrapper {
+        margin: 30px 0px;
+    }
+
+    #homepage__nav-links__secret-hamburger-wrapper {
+        display: block;
+        margin-top: 0px;
+        margin-bottom: 50px;
+    }
+
+    .homepage__nav-links__link {
+        color: var(--black) !important; 
+    }
+
+    #homepage__nav-links__hamburger-wrapper {
+        margin: 0px;
+        display: block;
+    } 
+}
+
+
+/***************HOMEPAGE CONTENT****************/
+
+#homepage__content__wrapper {
+    border: 1px solid white;
+}
+
+#homepage__content {
+    text-align: center;
+}
+
+#homepage__content__learn-more-btn {
+    border: 1px solid var(--white);
+    background-color: transparent;
+    padding: 10px 30px;
+    font-size: 0.8rem;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+#homepage__content__company-name {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+#homepage__content__profession {
+    font-family: 'Kotta One', serif;
+    margin-bottom: 20px;
+    text-align: center;
+    line-height: 20px;
+}
+
+#homepage__content__learn-more-btn:hover {
+    background-color: var(--white);
+    color: var(--black);
+}
+
+/***************ABOUT****************/
+
+#leadership {
+    margin-top: 50px;
+    background-color: rgb(229, 229, 229);
+    height: fit-content;
+    display: flex;
+    padding: 50px;
+    align-items: center;
+    justify-content: center;
+}
+
+#leadership__description {
+    text-align: left;
+}
+
+#leadership__description p {
+    color: var(--textColor);
+}
+
+#leadership__headshot {
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+    border-radius: 50%;
+    margin-right: 100px;
+}
+
+@media (max-width: 900px) {
+    #leadership {
+        flex-flow: column;
+    }
+
+    #leadership__description {
+        margin-top: 30px;
+        text-align: center;
+    }
+
+    #leadership__headshot {
+        height: 300px;
+        width: 300px;
+        margin-right: 0px;
+    }
+}
+
+/***************REVIEWS****************/
+
+#reviews__wrapper {
+    padding: 50px;
+}
+
+#reviews__text {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+#reviews {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-evenly;
+}
+
+#review {
+    flex: 1;
+    margin: 0px 20px 0px 20px;
+    text-align: center;
+}
+
+#review__text {
+    color: var(--textColor);
+    font-family: 'Kotta One', serif;
+    margin-bottom: 30px;
+}
+
+@media (max-width: 900px) {
+    #reviews {
+        flex-flow: column;
+    }
+}
+
+/***************FOOTER****************/
+
+#footer {
+    margin-top: 50px;
+    height: fit-content;
+    padding: 40px 40px 20px 40px;
+    background-color: var(--black);
+}
+
+#footer__info {
+    display: flex;
+    align-items: top;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+#footer__info__about__company {
+    margin-bottom: 25px;
+}
+
+#footer__info__contact__text {
+    margin-bottom: 25px;
+    text-decoration: none;
+}
+
+#footer__info__about__profession {
+    font-family: 'Kotta One', serif;
+}
+
+#footer__info__location__text {
+    text-align: center;
+}
+
+#footer__info__address,
+#footer__info__number,
+#footer__info__copyright {
+    font-family: 'Kotta One', serif;
+}
+
+#footer__info__location__directions {
+    text-align: center;
+    font-family: 'Kotta One', serif;
+}
+
+#footer__info__contact,
+#footer__info__about {
+    text-align: center;
+}
+
+#footer__logos {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#footer__base {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#footer__info__address {
+    text-align: center;
+}
+
+#footer__base p {
+    margin-top: 100px;
+    font-size: 0.7rem;
+    text-align: center;
+}
+

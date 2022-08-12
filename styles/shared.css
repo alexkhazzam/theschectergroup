@@ -1,0 +1,48 @@
+/* Any copying or redustribution of this code is ILLEGAL. Whomever does so will be subject to prosecution*/
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kotta+One&display=swap');
+
+* {
+    letter-spacing: 1.5px !important;
+    font-family: 'Montserrat', sans-serif; 
+    box-sizing: border-box;
+}
+
+:root {
+    --white: #fff;
+    --black: #090909;
+    --textColor: #615d5d;
+}
+
+html {
+    padding: 10px;
+    padding-bottom: 0px;
+    background-color: var(--white);
+}
+
+body {
+    margin-bottom: 0px;
+    background-color: var(--white);
+}
+
+/***************WHITE COLOR****************/
+
+#homepage__content__learn-more-btn:hover,
+#homepage__content__learn-more-btn,
+#homepage__content__welcome-text,
+#homepage__content__company-name,
+#homepage__content__profession,
+#homepage__nav__name,
+#footer__info__about__company,
+#footer__info__about__profession,
+#footer__info__contact__text,
+#footer__info__location__directions,
+#footer__info__number,
+#footer__info__address,
+#footer__name,
+#footer__copyright,
+#footer__info__location p,
+.homepage__nav-links__link {
+    color: var(--white);
+}
