@@ -88,6 +88,13 @@
     cursor: pointer;
 }
 
+@media (min-width: 900px) {
+    #homepage__nav-links {
+        display: flex !important;
+        flex-direction: row !important;
+    }
+}
+
 @media (max-width: 900px) {
     #homepage__nav-links {
         display: none;

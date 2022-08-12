@@ -10,6 +10,10 @@ document
     navLinksWrapper.style.display = 'none';
   });
 
+const scrollToLeadership = () => {
+  document.getElementById('leadership').scrollIntoView({ behavior: 'smooth' });
+};
+
 const hamburger = document.getElementById('homepage__nav-links__hamburger');
 
 hamburger.addEventListener('click', () => {
