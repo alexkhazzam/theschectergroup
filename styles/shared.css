@@ -26,6 +26,15 @@ body {
     background-color: var(--white);
 }
 
+@media (max-width: 500px) {
+    html,
+    body {
+        padding: 0px;
+        margin: 0px;
+    }
+}
+
+
 /***************WHITE COLOR****************/
 
 #homepage__content__learn-more-btn:hover,

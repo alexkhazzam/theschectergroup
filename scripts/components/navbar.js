@@ -142,19 +142,19 @@ class Navbar extends HTMLElement {
                         <a class="homepage__nav-links__link" id="about-link" href="./about.html">ABOUT</a>
                     </li>
                     <li class="homepage__nav-links__link-wrapper">
-                        <a class="homepage__nav-links__link" href="./buy.html">BUY</a>
+                        <a class="homepage__nav-links__link" id="buy-link" href="./buy.html">BUY</a>
                     </li>
                     <li class="homepage__nav-links__link-wrapper">
-                        <a class="homepage__nav-links__link" href="./sell.html">SELL</a>
+                        <a class="homepage__nav-links__link" id="sell-link" href="./sell.html">SELL</a>
                     </li>
                     <li class="homepage__nav-links__link-wrapper">
-                        <a class="homepage__nav-links__link" href="./listings.html">LISTINGS</a>
+                        <a class="homepage__nav-links__link" id="listings-link" href="./listings.html">LISTINGS</a>
                     </li>
                     <li class="homepage__nav-links__link-wrapper">
-                        <a class="homepage__nav-links__link" href="./rentals.html">RENTALS</a>
+                        <a class="homepage__nav-links__link" id="rentals-link" href="./rentals.html">RENTALS</a>
                     </li>
-                    <li class="homepage__nav-links__link-wrapper" id="contact-link">
-                        <a class="homepage__nav-links__link" href="./contact.html">CONTACT</a>
+                    <li class="homepage__nav-links__link-wrapper">
+                        <a class="homepage__nav-links__link" id="contact-link" href="./contact.html">CONTACT</a>
                     </li>
                 </div>
             </div>

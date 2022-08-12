@@ -1,13 +1,5 @@
 /* Any copying or redustribution of this code is ILLEGAL. Whomever does so will be subject to prosecution*/
 
-@media (max-width: 500px) {
-    html,
-    body {
-        padding: 0px;
-        margin: 0px;
-    }
-}
-
 /***************CURSOR POINTER****************/
 
 #homepage__nav__name,
@@ -87,6 +79,12 @@
     cursor: pointer;
 }
 
+#homepage__nav-links hr {
+    display: none;
+    width: 80%;
+    border-color: rgba(237, 237, 237, 0.197);
+}
+
 @media (min-width: 900px) {
     #homepage__nav-links {
         display: flex !important;
@@ -97,6 +95,7 @@
 @media (max-width: 900px) {
     #homepage__nav-links {
         display: none;
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
         flex-direction: column;
         position: absolute;
         padding: 20px;
@@ -104,9 +103,14 @@
         right: 0;
         animation: slideLeft 0.5s;
         top: 0;
-        width: 60%;
+        width: 70%;
         height: 100vh;
     }
+
+    #homepage__nav-links hr {
+        display: block;
+    }
+    
 
     @keyframes slideLeft {
         from {
@@ -114,19 +118,21 @@
         }
 
         to {
-            left: 40%;
+            left: 30%;
         }
     }
 
     
     .homepage__nav-links__link-wrapper {
-        margin: 30px 0px;
+        margin: 20px 0px;
+        text-align: center;
     }
 
     #homepage__nav-links__secret-hamburger-wrapper {
         display: block;
         margin-top: 0px;
-        margin-bottom: 50px;
+        text-align: right;
+        margin-bottom: 70px;
     }
 
     .homepage__nav-links__link {
