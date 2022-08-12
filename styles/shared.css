@@ -55,3 +55,139 @@ body {
 .homepage__nav-links__link {
     color: var(--white);
 }
+
+/***************NAVBAR****************/
+
+#contact-link-wrapper {
+    margin-right: 0px !important;
+}
+
+#homepage__nav {
+    justify-content: space-between;
+    align-items: center;
+    transition: 0.5s;
+    padding: 40px;
+    position: fixed;
+    display: flex;
+    width: 100%;
+    top: 0;
+}
+
+#homepage__nav__name,
+.homepage__nav-links__link:hover,
+.homepage__nav-links__link
+ {
+    text-decoration: none;
+    cursor: pointer;
+}
+
+#homepage__about {
+    display: flex;
+    align-items: center;
+}
+
+#homepage__nav__name {
+    text-decoration: none;
+}
+
+#logo {
+    margin-right: 15px;
+    display: none;
+}
+
+#contact-link {
+    margin-right: 0px !important;
+}
+
+#homepage__nav-links__hamburger {
+    cursor: pointer;
+}
+
+#homepage__nav-links__hamburger-wrapper {
+    display: none;
+}
+
+#homepage__nav-links {
+    display: flex;
+}
+
+.homepage__nav-links__link-wrapper {
+    list-style-type: none;
+    margin: 0px 20px;
+}
+
+.homepage__nav-links__link {
+    font-size: 0.8rem;
+    text-decoration: none;
+}
+
+#homepage__nav-links__secret-hamburger-wrapper {
+    display: none;
+    cursor: pointer;
+}
+
+#homepage__nav-links hr {
+    display: none;
+    width: 80%;
+    border-color: rgba(237, 237, 237, 0.197);
+}
+
+@media (min-width: 900px) {
+    #homepage__nav-links {
+        display: flex !important;
+        flex-direction: row !important;
+    }
+}
+
+@media (max-width: 900px) {
+    #homepage__nav-links {
+        display: none;
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+        flex-direction: column;
+        position: absolute;
+        padding: 20px;
+        background-color: var(--white);
+        right: 0;
+        animation: slideLeft 0.5s;
+        top: 0;
+        width: 80%;
+        height: 100vh;
+    }
+
+    #homepage__nav-links hr {
+        display: block;
+    }
+    
+
+    @keyframes slideLeft {
+        from {
+            left: 100%;
+        }
+
+        to {
+            left: 20%;
+        }
+    }
+
+    
+    .homepage__nav-links__link-wrapper {
+        margin: 20px 0px;
+        text-align: center;
+    }
+
+    #homepage__nav-links__secret-hamburger-wrapper {
+        display: block;
+        margin-top: 0px;
+        text-align: right;
+        margin-bottom: 70px;
+    }
+
+    .homepage__nav-links__link {
+        color: var(--black) !important; 
+    }
+
+    #homepage__nav-links__hamburger-wrapper {
+        margin: 0px;
+        display: block;
+    } 
+}

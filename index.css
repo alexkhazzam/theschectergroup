@@ -1,15 +1,5 @@
 /* Any copying or redustribution of this code is ILLEGAL. Whomever does so will be subject to prosecution*/
 
-/***************CURSOR POINTER****************/
-
-#homepage__nav__name,
-.homepage__nav-links__link:hover,
-.homepage__nav-links__link
- {
-    text-decoration: none;
-    cursor: pointer;
-}
-
 /***************HOMEPAGE****************/
 
 #homepage {    
@@ -28,7 +18,7 @@
 
 /***************HOMEPAGE NAV****************/
 
-#homepage__nav {
+/* #homepage__nav {
     justify-content: space-between;
     align-items: center;
     transition: 0.5s;
@@ -143,7 +133,7 @@
         margin: 0px;
         display: block;
     } 
-}
+} */
 
 
 /***************HOMEPAGE CONTENT****************/

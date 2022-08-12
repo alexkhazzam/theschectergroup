@@ -2,3 +2,18 @@ html {
     height: 3000px;
 }
 
+#homepage__nav {
+    z-index: 1;
+}
+
+#homepage__nav {
+    justify-content: space-between;
+    align-items: center;
+    transition: 0.5s;
+    padding: 40px;
+    position: fixed;
+    display: flex;
+    width: 100%;
+    top: 0;
+    left: 0;
+}
