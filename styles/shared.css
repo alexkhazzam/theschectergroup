@@ -119,6 +119,7 @@ body {
 .homepage__nav-links__link {
     font-size: 0.8rem;
     text-decoration: none;
+    color: var(--white) !important;
 }
 
 #homepage__nav-links__secret-hamburger-wrapper {
