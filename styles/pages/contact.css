@@ -35,15 +35,16 @@
     border: 1px solid var(--black);
     background-color: transparent;
     padding: 10px 30px;
-    color: var(--black) !important;
+    background-color: var(--black);
+    color: var(--white);
     font-size: 0.8rem;
     transition: 0.3s;
     cursor: pointer;
 }
 
 #submit-btn:hover {
-    background-color: var(--black);
-    color: var(--white);
+    color: var(--black) !important;
+    background-color: var(--white);
     padding: 10px 30px;
     font-size: 0.8rem;
     transition: 0.3s;
