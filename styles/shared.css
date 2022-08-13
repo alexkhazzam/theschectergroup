@@ -133,8 +133,8 @@ body {
 
 #homepage__nav-links hr {
     display: none;
-    width: 80%;
-    border-color: rgba(237, 237, 237, 0.197);
+    width: 80% !important;
+    border-color: rgba(237, 237, 237, 0.197) !important;
 }
 
 #home-link-wrapper,
@@ -202,7 +202,7 @@ body {
     }
 
     #homepage__nav-links hr {
-        display: block;
+        display: block !important;
     }
     
 

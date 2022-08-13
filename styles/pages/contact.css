@@ -35,6 +35,7 @@
     border: 1px solid var(--black);
     background-color: transparent;
     padding: 10px 30px;
+    color: var(--black) !important;
     font-size: 0.8rem;
     transition: 0.3s;
     cursor: pointer;
