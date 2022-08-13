@@ -268,6 +268,10 @@
     flex-wrap: wrap;
 }
 
+#get__directions__wrapper {
+    text-decoration: none;
+}
+
 #footer__info__about__company {
     margin-bottom: 25px;
 }

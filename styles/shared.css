@@ -137,6 +137,10 @@ body {
     display: none;
 }
 
+#overlay {
+    display: none;
+}
+
 @media (min-width: 900px) {
     #homepage__nav-links {
         display: flex !important;
@@ -155,8 +159,23 @@ body {
         right: 0;
         top: 0;
         bottom: 0;
-        width: 70%;
+        width: 60%;
+        z-index: 2 !important;
         height: 100vh;
+    }
+
+    #overlay {
+        position: fixed;
+        display: none;
+        width: 40%; 
+        height: 100%; 
+        top: 0;
+        animation: slideRight 0.5s;
+        left: 0;
+        bottom: 0;
+        background-color: rgba(0,0,0,0.5); 
+        z-index: 1; 
+        cursor: pointer; 
     }
 
     #contact-link-wrapper {
@@ -187,20 +206,9 @@ body {
         }
 
         to {
-            left: 30%;
+            left: 40%;
         }
     }
-
-    @keyframes slideRight {
-        from {
-            left: 30%;
-        }
-
-        to {
-            right: 0px;
-        }
-    }
-
     
     .homepage__nav-links__link-wrapper {
         margin: 20px 0px;
@@ -211,7 +219,7 @@ body {
         display: block;
         margin-top: 0px;
         text-align: right;
-        margin-bottom: 70px;
+        margin-bottom: 40px;
     }
 
     .homepage__nav-links__link {
