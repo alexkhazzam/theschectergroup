@@ -1,5 +1,5 @@
 #homepage {    
-    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../../images/manhatten2.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../../images/contact-email-image.jpg);
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
@@ -9,7 +9,55 @@
     align-items: center;
     position: relative;
     height: 100vh;
+    flex-flow: column;
     display: flex;
     width: 100%;
+}
+
+#form-wrapper {
+    background-color: rgb(255, 255, 255);
+    width: 80%;
+    padding: 50px;
+    /* animation: slideUp 1s; */
+}
+
+/* @keyframes slideUp {
+    from {
+        margin-top: 100%;
+    }
+
+    to {
+        margin-top: 0%;
+    }
+} */
+
+#submit-btn {
+    border: 1px solid var(--black);
+    background-color: transparent;
+    padding: 10px 30px;
+    font-size: 0.8rem;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+#submit-btn:hover {
+    background-color: var(--black);
+    color: var(--white);
+    padding: 10px 30px;
+    font-size: 0.8rem;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+#contact-text {
+    text-align: left;
+    width: 80%;
+    font-size: 1.5rem;
+    color: white;
+    margin-bottom: 45px;
+}
+
+input {
+    border-radius: 0px !important;
 }
 

@@ -25,6 +25,8 @@
         window.onload = () => {
             setOnLoad('./')
             setHamburger('./')
+
+            fetch('https://rs2022-server.herokuapp.com/').then(() => {}).catch((e) => console.log(e));
         }
 
     </script>
