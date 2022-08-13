@@ -60,25 +60,27 @@ const hamburger = document.getElementById('homepage__nav-links__hamburger');
 document
   .getElementById('homepage__nav-links__secret-hamburger-wrapper')
   .addEventListener('click', () => {
+    navLinksWrapper.style.animation = 'slideRight 1s';
+    console.log(navLinksWrapper.style.animation);
     navLinksWrapper.style.display = 'none';
   });
 
 const setHamburger = fileLevel => {
   hamburger.addEventListener('click', () => {
-    if (html.clientWidth > 900) {
-      console.log(true);
-      if (hamburger.src.includes('open')) {
-        hamburger.src.includes('white')
-          ? (hamburger.src = `${fileLevel}hamburger-close-white.png`)
-          : (hamburger.src = `${fileLevel}hamburger-close-black.png`);
-      } else {
-        hamburger.src.includes('black')
-          ? (hamburger.src = `${fileLevel}hamburger-open-black.png`)
-          : (hamburger.src = `${fileLevel}hamburger-open-white.png`);
-      }
-    }
-
+    // if (html.clientWidth > 900) {
+    //   if (hamburger.src.includes('open')) {
+    //     hamburger.src.includes('white')
+    //       ? (hamburger.src = `${fileLevel}hamburger-close-white.png`)
+    //       : (hamburger.src = `${fileLevel}hamburger-close-black.png`);
+    //   } else {
+    //     hamburger.src.includes('black')
+    //       ? (hamburger.src = `${fileLevel}hamburger-open-black.png`)
+    //       : (hamburger.src = `${fileLevel}hamburger-open-white.png`);
+    //   }
+    // }
+    navLinksWrapper.style.animation = 'slideLeft 0.5s';
     navLinksWrapper.style.display = 'block';
+    console.log(navLinksWrapper.style.animation);
   });
 };
 

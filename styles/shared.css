@@ -132,6 +132,11 @@ body {
     border-color: rgba(237, 237, 237, 0.197);
 }
 
+#home-link-wrapper,
+#email-link-wrapper {
+    display: none;
+}
+
 @media (min-width: 900px) {
     #homepage__nav-links {
         display: flex !important;
@@ -150,9 +155,21 @@ body {
         right: 0;
         top: 0;
         bottom: 0;
-        animation: slideLeft 0.5s;
         width: 70%;
         height: 100vh;
+    }
+
+    #contact-link-wrapper {
+        display: none;
+    }
+
+    #home-link-wrapper,
+    #email-link-wrapper {
+        display: block;
+    }
+
+    #email-link-wrapper {
+        margin-top: 50px;
     }
 
     .homepage__nav-links__link:hover {
@@ -171,6 +188,16 @@ body {
 
         to {
             left: 30%;
+        }
+    }
+
+    @keyframes slideRight {
+        from {
+            left: 30%;
+        }
+
+        to {
+            right: 0px;
         }
     }
 
