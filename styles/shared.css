@@ -156,6 +156,7 @@ body {
         position: absolute;
         padding: 20px;
         background-color: var(--white);
+        animation: slideLeft 0.5s;
         right: 0;
         top: 0;
         bottom: 0;
@@ -207,6 +208,16 @@ body {
 
         to {
             left: 40%;
+        }
+    }
+
+    @keyframes slideRight {
+        from {
+            left: 100%;
+        }
+
+        to {
+            left: 0%;
         }
     }
     

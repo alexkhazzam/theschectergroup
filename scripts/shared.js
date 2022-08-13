@@ -69,7 +69,6 @@ document
 
 const setHamburger = fileLevel => {
   hamburger.addEventListener('click', () => {
-    navLinksWrapper.style.animation = 'slideLeft 0.5s';
     navLinksWrapper.style.display = 'block';
     overlay.style.display = 'block';
     overlay.addEventListener('click', removeSideNav);
