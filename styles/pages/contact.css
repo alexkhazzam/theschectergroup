@@ -18,18 +18,7 @@
     background-color: rgba(0, 0, 0, 0.512);
     width: 80%;
     padding: 100px;
-    /* animation: slideUp 1s; */
 }
-
-/* @keyframes slideUp {
-    from {
-        margin-top: 100%;
-    }
-
-    to {
-        margin-top: 0%;
-    }
-} */
 
 #submit-btn {
     border: 1px solid var(--white);
@@ -41,6 +30,7 @@
     transition: 0.3s;
     cursor: pointer;
 }
+
 
 #submit-btn:hover {
     color: var(--black) !important;
@@ -60,13 +50,12 @@ textarea {
     outline: none !important;
 }
 
-input,
-textarea {
-
-}
-
 input {
     border-radius: 0px !important;
+}
+
+#footer {
+    margin-top: 0px !important;
 }
 
 @media (max-width: 900px) {
@@ -75,9 +64,5 @@ input {
         padding: 35px;
         /* animation: slideUp 1s; */
     }   
-
-    #footer {
-        margin-top: 0px !important;
-    }
 }
 

@@ -34,20 +34,20 @@
 <body>
     <div id="homepage">
         <custom-navbar></custom-navbar>
-        <!-- <div id="form-wrapper">
+        <div id="form-wrapper">
             <p style="color: white;">ONLINE INQUIRY</p>
             <form action="https://formspree.io/f/xpznzpvb" method="POST" onsubmit="event.preventDefault(); submitForm()">
                 <input type="text" class="form-control" id="exampleInputPassword1"placeholder="Full Name" name="name" required>
                 <input type="email" class="form-control" id="exampleInputEmail1"aria-describedby="emailHelp" placeholder="Email" name="email" required>
                 <input type="text" class="form-control" id="exampleInputPassword1"placeholder="Phone" name="password" required>
                 <input type="text" class="form-control" id="exampleInputPassword1"placeholder="Subject" name="subject" required>
-                <textarea class="form-control" id="exampleFormControlTextarea1"rows="5" placeholder="Message" name="message" required></textarea>
+                <textarea class="form-control" id="exampleFormControlTextarea1"rows="5" placeholder="Message" name="message" required style="max-width: 100%; min-width: 100%;"></textarea>
                 <div style="display: flex; align-items: center; margin-top: 30px;">
                     <button type="submit" id="submit-btn" style="margin-right: 10px;">Submit</button>
-                    <img src="../icons/white-send-icon.png">
+                    <img src="../icons/white-send-icon.png" onclick="submitForm()" style="cursor: pointer;">
                 </div>
             </form>
-        </div> -->
+        </div>
     </div>
     <custom-footer></custom-footer>
 </body>

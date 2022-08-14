@@ -23,7 +23,7 @@ class Navbar extends HTMLElement {
                             <img src="../icons/hamburger-close-black.png" id="homepage__nav-links__secret-hamburger">
                         </li>
                         <li class="homepage__nav-links__link-wrapper" id="home-link-wrapper">
-                            <a class="homepage__nav-links__link" id="home-link" href="./index.html">HOME</a>
+                            <a class="homepage__nav-links__link" id="home-link" href="../index.html">HOME</a>
                         </li>
                         <hr>
                         <li class="homepage__nav-links__link-wrapper">
