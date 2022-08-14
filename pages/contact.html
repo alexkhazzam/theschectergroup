@@ -10,9 +10,6 @@
     <script src="../scripts/components/footer.js" defer></script>
     <script src="../scripts/components/navbar.js" defer></script>
     <script src="../scripts/shared.js" defer></script>
-
-    
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     
     <link rel="stylesheet" href="../styles/shared.css">
     <link rel="stylesheet" href="../styles/pages/shared.css">
@@ -24,33 +21,33 @@
             setOnLoad('../')
             setHamburger('../')
         }
+
+        const submitForm = () => {
+            const form = document.querySelector('form');
+            form.submit()
+
+            document.querySelectorAll('input').forEach((input) => input.value = "");
+            document.querySelector('textarea').value = ""
+        }
     </script>
 </head>
 <body>
     <div id="homepage">
         <custom-navbar></custom-navbar>
-        <p id="contact-text">ONLINE INQUIRY</p>
-        <div id="form-wrapper">
-            <form action="https://formspree.io/f/xpznzpvb" method="POST">
-                <div class="form-group">
-                    <input type="text" class="form-control" id="exampleInputPassword1" placeholder="Full Name" name="name" required>
+        <!-- <div id="form-wrapper">
+            <p style="color: white;">ONLINE INQUIRY</p>
+            <form action="https://formspree.io/f/xpznzpvb" method="POST" onsubmit="event.preventDefault(); submitForm()">
+                <input type="text" class="form-control" id="exampleInputPassword1"placeholder="Full Name" name="name" required>
+                <input type="email" class="form-control" id="exampleInputEmail1"aria-describedby="emailHelp" placeholder="Email" name="email" required>
+                <input type="text" class="form-control" id="exampleInputPassword1"placeholder="Phone" name="password" required>
+                <input type="text" class="form-control" id="exampleInputPassword1"placeholder="Subject" name="subject" required>
+                <textarea class="form-control" id="exampleFormControlTextarea1"rows="5" placeholder="Message" name="message" required></textarea>
+                <div style="display: flex; align-items: center; margin-top: 30px;">
+                    <button type="submit" id="submit-btn" style="margin-right: 10px;">Submit</button>
+                    <img src="../icons/white-send-icon.png">
                 </div>
-                <div class="form-group">
-                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Email" name="email" required>
-                </div>
-                <div class="form-group">
-                    <input type="text" class="form-control" id="exampleInputPassword1" placeholder="Phone" name="password" required>
-                </div>
-                <div class="form-group">
-                    <input type="text" class="form-control" id="exampleInputPassword1" placeholder="Subject" name="subject" required>
-                </div>
-                <div class="form-group">
-                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="5" placeholder="Message" name="message" required></textarea>
-                </div>
-                <button type="submit" id="submit-btn">Submit</button>
-                <img src="../icons/email-send.png">
             </form>
-        </div>
+        </div> -->
     </div>
     <custom-footer></custom-footer>
 </body>

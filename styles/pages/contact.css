@@ -15,9 +15,9 @@
 }
 
 #form-wrapper {
-    background-color: rgb(255, 255, 255);
+    background-color: rgba(0, 0, 0, 0.512);
     width: 80%;
-    padding: 50px;
+    padding: 100px;
     /* animation: slideUp 1s; */
 }
 
@@ -32,7 +32,7 @@
 } */
 
 #submit-btn {
-    border: 1px solid var(--black);
+    border: 1px solid var(--white);
     background-color: transparent;
     padding: 10px 30px;
     background-color: var(--black);
@@ -51,12 +51,18 @@
     cursor: pointer;
 }
 
-#contact-text {
-    text-align: left;
-    width: 80%;
-    font-size: 1.5rem;
-    color: white;
-    margin-bottom: 45px;
+input,
+textarea {
+    padding: 15px !important;
+    margin: 10px 0px;
+    width: 100%;
+    border: none !important;
+    outline: none !important;
+}
+
+input,
+textarea {
+
 }
 
 input {
@@ -65,7 +71,6 @@ input {
 
 @media (max-width: 900px) {
     #form-wrapper {
-        background-color: rgb(255, 255, 255);
         width: 80%;
         padding: 35px;
         /* animation: slideUp 1s; */
@@ -74,14 +79,5 @@ input {
     #footer {
         margin-top: 0px !important;
     }
-
-    #contact-text {
-        text-align: left;
-        width: 80%;
-        font-size: 1.5rem;
-        color: white;
-        margin-bottom: 20px;
-    }
-    
 }
 

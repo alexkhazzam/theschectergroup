@@ -1,17 +1,61 @@
 #homepage {    
-    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../../images/manhatten2.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../../images/background-about.jpg);
     background-size: cover;
     background-position: center;
-    background-attachment: fixed;
 
     box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
     justify-content: center;
     align-items: center;
     position: relative;
-    height: 100vh;
+    height: 50vh;
     display: flex;
     width: 100%;
 }
 
+#leadership {
+    margin-top: 50px;
+    background-color: rgb(229, 229, 229);
+    height: fit-content;
+    display: flex;
+    padding: 50px;
+    align-items: center;
+    justify-content: center;
+}
+
+#leadership__description {
+    text-align: left;
+}
+
+#leadership__description p {
+    color: var(--textColor);
+}
+
+#leadership__headshot {
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+    border-radius: 50%;
+    margin-right: 100px;
+}
+
+#homepage__main-text {
+    color: var(--white);
+    text-align: center;
+}
+
+@media (max-width: 900px) {
+    #leadership {
+        flex-flow: column;
+    }
+
+    #leadership__description {
+        margin-top: 30px;
+        text-align: center;
+    }
+
+    #leadership__headshot {
+        height: 300px;
+        width: 300px;
+        margin-right: 0px;
+    }
+}
 
 
