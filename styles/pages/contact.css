@@ -70,3 +70,16 @@ input {
     }
 }
 
+@media (max-height: 667) {
+    #form-wrapper {
+        width: 80%;
+        padding: 20px;
+        /* animation: slideUp 1s; */
+    }   
+
+    #online-inquiry {
+        display: none;
+    }
+}
+
+

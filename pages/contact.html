@@ -14,6 +14,8 @@
     <link rel="stylesheet" href="../styles/shared.css">
     <link rel="stylesheet" href="../styles/pages/shared.css">
     <link rel="stylesheet" href="../styles/pages/contact.css">
+
+    <!-- <a target="_blank" href="https://icons8.com/icon/wWXjhreryCHQ/captcha">captcha</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a> -->
     <!-- <a target="_blank" href="https://icons8.com/icon/100004/email-send">Email Send</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a> -->
 
     <script>
@@ -39,10 +41,14 @@
             <form action="https://formspree.io/f/xpznzpvb" method="POST" onsubmit="event.preventDefault(); submitForm()">
                 <input type="text" class="form-control" id="exampleInputPassword1"placeholder="Full Name" name="name" required>
                 <input type="email" class="form-control" id="exampleInputEmail1"aria-describedby="emailHelp" placeholder="Email" name="email" required>
-                <input type="text" class="form-control" id="exampleInputPassword1"placeholder="Phone" name="password" required>
+                <input type="text" class="form-control" id="exampleInputPassword1"placeholder="Phone" name="password">
                 <input type="text" class="form-control" id="exampleInputPassword1"placeholder="Subject" name="subject" required>
                 <textarea class="form-control" id="exampleFormControlTextarea1"rows="5" placeholder="Message" name="message" required style="max-width: 100%; min-width: 100%;"></textarea>
-                <div style="display: flex; align-items: center; margin-top: 30px;">
+                <div style="display: flex; align-items: center; margin-top: 0px">
+                    <p style="color: white; margin-right: 10px">reCAPTCHA Protected</p>
+                    <img src="../icons/captcha.png" width="40" height="40">
+                </div>
+                <div style="display: flex; align-items: center; margin-top: 30px">
                     <button type="submit" id="submit-btn" style="margin-right: 10px;">Submit</button>
                     <img src="../icons/white-send-icon.png" onclick="submitForm()" style="cursor: pointer;">
                 </div>
