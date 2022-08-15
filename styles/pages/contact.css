@@ -61,8 +61,12 @@ input {
 @media (max-width: 900px) {
     #form-wrapper {
         width: 80%;
-        padding: 35px;
+        padding: 20px;
         /* animation: slideUp 1s; */
     }   
+
+    #online-inquiry {
+        display: none;
+    }
 }
 
