@@ -21,6 +21,16 @@ const setHamburger = fileLevel => {
   });
 };
 
+const showDropdown = file => {
+  const element = document.getElementById(file);
+  element.style.display = 'block';
+};
+
+const hideDropdown = file => {
+  const element = document.getElementById(file);
+  element.style.display = 'none';
+};
+
 const setOnLoad = fileLevel => {
   window.onscroll = () => {
     const nav = document.getElementById('homepage__nav');
